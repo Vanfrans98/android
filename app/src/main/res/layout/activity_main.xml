@@ -79,17 +79,23 @@
             android:id="@+id/editAngka1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"/>
+            android:layout_weight="3"
+            android:textAlignment="center"/>
+
         <Button
             android:id="@+id/buttonJumlah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="+"
+            android:onClick="tambah" />
+
         <EditText
             android:id="@+id/editAngka2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="3"/>
+            android:layout_weight="3"
+            android:textAlignment="center"/>
 
     </LinearLayout>
 
@@ -99,6 +105,38 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:textSize="20dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berikutnya"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:onClick="selanjutnya"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pergi ke Galeri"
+        android:onClick="kamera"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="200dp"
+        android:id="@+id/noTelp"
+        android:hint="Isi Nomor Telepon"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pergi ke Dial Up"
+        android:onClick="telepon"/>
+
 
 
 
